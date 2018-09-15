@@ -31,7 +31,7 @@ jobs:
       #- run: go test -v ./...
   deploy:
     environment:
-      - GOPATH: /home/circleci/go
+      - GOPATH: /go
     docker:
      - image: circleci/golang:1.9
     steps:
