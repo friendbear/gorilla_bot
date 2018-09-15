@@ -5,8 +5,8 @@ version: 2
 jobs:
   build:
     environment:
-      #- GOPATH: /home/circleci/go
-      - GOPATH: /go
+      - GOPATH: /home/circleci/go
+      #- GOPATH: /go
       #- GOROOT: /home/circleci/go
     docker:
       # specify the version
@@ -31,7 +31,7 @@ jobs:
       #- run: go test -v ./...
   deploy:
     environment:
-      - GOPATH: /go
+      - GOPATH: /home/circleci/go
     docker:
      - image: circleci/golang:1.9
     steps:
