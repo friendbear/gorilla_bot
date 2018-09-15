@@ -25,9 +25,9 @@ jobs:
     steps:
       - run: echo 'export PATH=${GOPATH}/bin/:${PATH}' >> $BASH_ENV
       - checkout
-      - run: cd ${CIRCLE_WORKING_DIRECTORY}/gorilla_bot
+      #- run: cd ${CIRCLE_WORKING_DIRECTORY}/gorilla_bot
       # specify any bash command here prefixed with `run: `
-      - run: go get -v -t -d ./...
+      - run: go get -v -t -d gorilla_bot/...
       #- run: go test -v ./...
   deploy:
     environment:
