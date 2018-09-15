@@ -6,8 +6,7 @@ jobs:
   build:
     environment:
       - GOPATH: /home/circleci/go
-      #- GOPATH: /go
-      #- GOROOT: /home/circleci/go
+      - GOROOT: /home/circleci
     docker:
       # specify the version
       - image: circleci/golang:1.9
